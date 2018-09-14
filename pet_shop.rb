@@ -60,12 +60,30 @@ end
 
 #Test 8 test_all_pets_by_breed__found
 
-def pets_by_breed(pet_shop, breed)
-  count = 0
-  for pets in pet_shop
-    if breed == pet_shop[:pets][:breed]
-      count += 1
-    end
-  end
-  p count
-end
+# def pets_by_breed(pet_shop, breed)
+#   count = 0
+#   for pets in pet_shop
+#     if breed == pet_shop[:pets][:breed]
+#       count += 1
+#     end
+#   end
+#   p count
+# end
+
+#Think the if arguments were the wrong way round, this should remedy that at the least
+# def pets_by_breed(pet_shop, breed)
+#   count = 0
+#   pets_breed = pet_shop[:pets][:breed]
+#   for pets_breed in pet_shop
+#     if  pets_breed == breed
+#       count += 1
+#     end
+#   end
+#   p count
+# end
+
+
+# def pets_by_breed(pet_shop, breed)
+#   p pet_shop[:pets][:breed]["British Shorthair"]
+#   p breed
+# end
