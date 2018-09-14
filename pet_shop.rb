@@ -53,5 +53,6 @@ end
 
 #Test 7 stock_count
 
-def stock_count()
+def stock_count(pet_shop)
+  pet_shop[:pets].count
 end
