@@ -41,8 +41,9 @@ def pets_sold(pet_shop)
   pet_shop[:admin][:pets_sold]
 end
 
-
+#Go back and start defining these longer paths at the top! Also write a commit about that!
 #Test 6
 
-def increase_pets_sold()
+def increase_pets_sold(pet_shop, sold_pets)
+  pet_shop[:admin][:pets_sold] += sold_pets
 end
