@@ -150,12 +150,18 @@ end
 
 #Question 12
 
-def remove_pet_by_name(pet_shop, ex_pet)
-  for pet_array in pet_shop[:pets]
-    # p pet_array
-    if pet_array[:name] == ex_pet
-      pet_array[:name][3].delete(ex_pet)
-    end
-  end
-  p pet_shop[:pets]
+# def remove_pet_by_name(pet_shop, ex_pet)
+#   for pet_array in pet_shop[:pets]
+#     # p pet_array
+#     if pet_array[:name] == ex_pet
+#       pet_array[:name][3].delete(ex_pet)
+#     end
+#   end
+#   p pet_shop[:pets]
+# end
+
+#Question 13
+
+def add_pet_to_stock(pet_shop, new_pet)
+  pet_shop[:pets] << new_pet
 end
