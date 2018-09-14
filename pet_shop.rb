@@ -146,3 +146,16 @@ def find_pet_by_name (pet_shop, input_name)
   end
   return name_found.first #Adding the .first or [0] got the exact bit of data I required to pass the test, good to get tbe result
 end
+
+
+#Question 12
+
+def remove_pet_by_name(pet_shop, ex_pet)
+  for pet_array in pet_shop[:pets]
+    # p pet_array
+    if pet_array[:name] == ex_pet
+      pet_array[:name][3].delete(ex_pet)
+    end
+  end
+  p pet_shop[:pets]
+end
