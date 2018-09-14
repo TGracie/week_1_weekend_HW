@@ -28,8 +28,6 @@ end
 #   p cash
 # end
 
-def add_or_remove_cash(total_cash, income)
-  income = 10
-  cash = total_cash += income
-  p cash
+def add_or_remove_cash(total_cash, money)
+  return total_cash + money
 end
