@@ -40,3 +40,9 @@ end
 def pets_sold(pet_shop)
   pet_shop[:admin][:pets_sold]
 end
+
+
+#Test 6
+
+def increase_pets_sold()
+end
