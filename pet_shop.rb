@@ -38,4 +38,5 @@ end
 #Test 5 pets sold
 
 def pets_sold(pet_shop)
+  pet_shop[:admin][:pets_sold]
 end
