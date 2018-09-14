@@ -56,3 +56,9 @@ end
 def stock_count(pet_shop)
   pet_shop[:pets].count
 end
+
+
+#Test 8 test_all_pets_by_breed__found
+
+def pets_by_breed()
+end
