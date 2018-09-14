@@ -101,6 +101,7 @@ end
 def pets_by_breed(pet_shop, breed_string)
   pet_found = []
   for type in pet_shop[:pets]
+    # p type
     if type[:breed] == breed_string
       pet_found << type
     end
@@ -121,5 +122,15 @@ end
 
 #Question 10
 
-def find_pet_by_name()
+def find_pet_by_name (pet_shop, input_name)
+  name_found = []
+  for pet_name in pet_shop[:pets]
+    p pet_name[:name]
+    # p pet_shop[:pets]
+    if pet_name[:name] == input_name
+      # p pet_name[:name]
+      name_found << pet_name
+    end
+  end
+  # return pet_found
 end
