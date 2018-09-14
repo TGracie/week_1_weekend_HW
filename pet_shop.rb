@@ -28,6 +28,14 @@ end
 #   p cash
 # end
 
+#Need to remember here that I don't call on the functions above here, the test does that for me!!!!!!!!!!
 def add_or_remove_cash(pet_shop, money_to_add)
   pet_shop[:admin][:total_cash] += money_to_add
+end
+#Works for Test 4 (remove cash) as well!
+
+
+#Test 5 pets sold
+
+def pets_sold(pet_shop)
 end
