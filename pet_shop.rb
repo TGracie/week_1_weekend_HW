@@ -63,7 +63,7 @@ end
 def pets_by_breed(pet_shop, breed)
   count = 0
   for pets in pet_shop
-    if breed = pet_shop[:pets][:breed]
+    if breed == pet_shop[:pets][:breed]
       count += 1
     end
   end
