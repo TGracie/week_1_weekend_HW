@@ -88,11 +88,32 @@ end
 #   p breed
 # end
 
-def pets_by_breed(pet_shop, breed)
-  count = 0
-  for type in pet_shop[:pets][:breed]
-    if type == breed
-      count += 1
+# def pets_by_breed(pet_shop, input_string)
+#   pets_by_breed = []
+#   for type in pet_shop[:pets][input_string]
+#     if type == breed
+#       pets_by_breed.push.(type)
+#     end
+#   end
+#   return pets_by_breed.count
+# end
+
+def pets_by_breed(pet_shop, breed_string)
+  pet_found = []
+  for type in pet_shop[:pets]
+    if type[:breed] == breed_string
+      pet_found << type
     end
   end
+  return pet_found
 end
+
+# def pets_by_breed(pet_shop, breed)
+#    result = []
+#      for animal in pet_shop[:pets]
+#        if animal[:breed] == breed
+#          result << animal
+#        end
+#      end
+#      return result
+#  end
