@@ -122,15 +122,27 @@ end
 
 #Question 10
 
+# def find_pet_by_name (pet_shop, input_name)
+#   name_found = []
+#   for pet_name in pet_shop[:pets]
+#     # p pet_name[:name]
+#     # p pet_shop[:pets]
+#     if pet_name[:name] == input_name
+#       # p pet_name
+#       # p pet_name[:name]
+#       name_found << pet_name
+#     end
+#   end
+#   p name_found
+# end
+# #This outputs the entire Arthur hash, now need to get the data out of it?
+
 def find_pet_by_name (pet_shop, input_name)
   name_found = []
   for pet_name in pet_shop[:pets]
-    p pet_name[:name]
-    # p pet_shop[:pets]
     if pet_name[:name] == input_name
-      # p pet_name[:name]
       name_found << pet_name
     end
   end
-  # return pet_found
+  return name_found.first
 end
