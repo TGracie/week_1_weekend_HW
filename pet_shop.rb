@@ -10,6 +10,11 @@ end
 
 #Test 2
 
+# def total_cash(pet_shop)
+#   #Doing prints to check output and then will just call total cash as print not required
+#   p pet_shop[:admin][:total_cash]
+# end
+
 def total_cash(pet_shop)
-  p pet_shop[:admin][:total_cash]
+  pet_shop[:admin][:total_cash]
 end
