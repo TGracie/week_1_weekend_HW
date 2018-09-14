@@ -118,4 +118,8 @@ end
 #      return result
 #  end
 
-#
+
+#Question 10
+
+def find_pet_by_name()
+end
