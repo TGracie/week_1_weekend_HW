@@ -172,3 +172,9 @@ end
 def customer_cash(customer)
   customer[:cash]
 end
+
+
+#Question 15
+def remove_customer_cash(customer, amount)
+  customer[:cash] -= amount
+end
