@@ -87,3 +87,12 @@ end
 #   p pet_shop[:pets][:breed]["British Shorthair"]
 #   p breed
 # end
+
+def pets_by_breed(pet_shop, breed)
+  count = 0
+  for type in pet_shop[:pets][:breed]
+    if type == breed
+      count += 1
+    end
+  end
+end
