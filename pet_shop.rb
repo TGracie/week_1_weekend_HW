@@ -28,6 +28,6 @@ end
 #   p cash
 # end
 
-def add_or_remove_cash(total_cash, money)
-  return total_cash + money
+def add_or_remove_cash(pet_shop, money_to_add)
+  pet_shop[:admin][:total_cash] += money_to_add
 end
