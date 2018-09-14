@@ -42,6 +42,7 @@ def pets_sold(pet_shop)
 end
 
 #Go back and start defining these longer paths at the top! Also write a commit about that!
+#Hello past me! That did not work!!!! Just do the long hand and ask about that form of refactoring on Monday!
 #Test 6
 
 def increase_pets_sold(pet_shop, sold_pets)
