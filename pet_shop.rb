@@ -144,5 +144,5 @@ def find_pet_by_name (pet_shop, input_name)
       name_found << pet_name
     end
   end
-  return name_found.first
+  return name_found.first #Adding the .first or [0] got the exact bit of data I required to pass the test, good to get tbe result
 end
