@@ -60,5 +60,12 @@ end
 
 #Test 8 test_all_pets_by_breed__found
 
-def pets_by_breed()
+def pets_by_breed(pet_shop, breed)
+  count = 0
+  for pets in pet_shop
+    if breed = pet_shop[:pets][:breed]
+      count += 1
+    end
+  end
+  p count
 end
