@@ -109,6 +109,7 @@ def pets_by_breed(pet_shop, breed_string)
   return pet_found
 end
 
+#Kris code!
 # def pets_by_breed(pet_shop, breed)
 #    result = []
 #      for animal in pet_shop[:pets]
@@ -144,7 +145,7 @@ def find_pet_by_name (pet_shop, input_name)
       name_found << pet_name
     end
   end
-  return name_found.first #Adding the .first or [0] got the exact bit of data I required to pass the test, good to get tbe result
+  return name_found.first #Adding the .first or [0] got the exact bit of data I required to pass the test, good to get the result
 end
 
 
@@ -154,13 +155,24 @@ end
 #   for pet_array in pet_shop[:pets]
 #     # p pet_array
 #     if pet_array[:name] == ex_pet
-#       pet_array[:name][3].delete(ex_pet)
+#       pet_array.delete(ex_pet)
 #     end
 #   end
-#   p pet_shop[:pets]
+#   p pet_shop[:pets][3]
 # end
 
+#Need to get the loop to tell me what index the found variable is at and then call the delete function on that indexed item!!!!!
+#That or shovel into a removed_pet array and delete from there?
 
+def remove_pet_by_name(pet_shop, input_name)
+  removed_pet = []
+  for pet_name in pet_shop[:pets]
+    if pet_name[:name] == input_name
+      removed_pet << pet_name
+    end
+  end
+  p removed_pet
+end
 #Question 13
 
 def add_pet_to_stock(pet_shop, new_pet)
@@ -190,3 +202,5 @@ end
 def add_pet_to_customer(customer, new_pet)
   customer[:pets] << new_pet
 end
+
+#END OF MVPS
