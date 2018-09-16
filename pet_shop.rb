@@ -222,5 +222,8 @@ end
 
 def sell_pet_to_customer(pet_shop, pet, customer)
   customer[:pets] << pet
+  customer[:cash] -= pet[:price]
+  pet_shop[:admin][:total_cash] += pet[:price]
+  pet_shop[:admin][:pets_sold] += 1
 
 end
