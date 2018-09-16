@@ -211,4 +211,6 @@ end
 
 #Q1
 def customer_can_afford_pet(customer, pet)
+  if customer[:cash] >= pet[:price]
+    return true
 end
