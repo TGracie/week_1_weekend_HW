@@ -164,15 +164,16 @@ end
 #Need to get the loop to tell me what index the found variable is at and then call the delete function on that indexed item!!!!!
 #That or shovel into a removed_pet array and delete from there?
 
-def remove_pet_by_name(pet_shop, input_name)
-  removed_pet = []
-  for pet_name in pet_shop[:pets]
-    if pet_name[:name] == input_name
-      removed_pet << pet_name
-    end
-  end
-  p removed_pet
-end
+# def remove_pet_by_name(pet_shop, input_name)
+#   for pet_name in pet_shop[:pets]
+#     if pet_name[:name] == input_name
+#       pet_shop[:pets].delete[3]
+#     end
+#   end
+#   p pet_shop[:pets][:name]
+# end
+
+
 #Question 13
 
 def add_pet_to_stock(pet_shop, new_pet)
@@ -204,3 +205,10 @@ def add_pet_to_customer(customer, new_pet)
 end
 
 #END OF MVPS
+
+
+#Optional Questions
+
+#Q1
+def customer_can_afford_pet(customer, pet)
+end
