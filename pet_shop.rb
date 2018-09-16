@@ -173,6 +173,24 @@ end
 #   p pet_shop[:pets][:name]
 # end
 
+#Hopefully this is the final iteration of the code I had to get the test to pass!
+
+def remove_pet_by_name(pet_shop, ex_pet)
+  for pet in pet_shop[:pets]
+    if pet[:name] == ex_pet
+      pet_shop[:pets].delete(pet)
+    end
+  end
+end
+
+# def remove_pet_by_name(pet_array, pet_removed)
+#  for pet in pet_array[:pets]
+#    if pet[:name] == pet_removed
+#      pet_array[:pets].delete(pet)
+#    end
+#  end
+# end
+
 
 #Question 13
 
@@ -220,10 +238,9 @@ end
 
 #Q3
 
-def sell_pet_to_customer(pet_shop, pet, customer)
-  customer[:pets] << pet
-  customer[:cash] -= pet[:price]
-  pet_shop[:admin][:total_cash] += pet[:price]
-  pet_shop[:admin][:pets_sold] += 1
-
-end
+# def sell_pet_to_customer(pet_shop, pet, customer)
+#   customer[:pets] << pet
+#   customer[:cash] -= pet[:price]
+#   pet_shop[:admin][:total_cash] += pet[:price]
+#   pet_shop[:admin][:pets_sold] += 1
+# end
