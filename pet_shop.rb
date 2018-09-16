@@ -209,10 +209,18 @@ end
 
 #Optional Questions
 
-#Q1
+#Q1 and Q2
 def customer_can_afford_pet(customer, pet)
   if customer[:cash] >= pet[:price]
     return true
     else false
   end
+end
+
+
+#Q3
+
+def sell_pet_to_customer(pet_shop, pet, customer)
+  customer[:pets] << pet
+
 end
